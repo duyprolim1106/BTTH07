@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="form--register">
-        <h1 style="margin-bottom: 20px;">Registration Form</h1>
+        <h1 style="margin-bottom: 20px;text-align: center;">Registration Form</h1>
         <div class="row">
             <div class="col1">
                 User ID: 
@@ -17,6 +17,7 @@
             <div class="col2">
                 <input type="text" class="col-input--s" name="txtUserID" id="txtUserID" required><span id="txtNotificationID"></span>
             </div>
+            
         </div>
         <div class="row">
             <div class="col1">
@@ -31,7 +32,7 @@
                 Name: 
             </div>
             <div class="col2">
-                <input type="text" class="col-input--l" name="txtName" id="txtName">
+                <input type="text" class="col-input--l" name="txtName" id="txtName"><span id="txtNotificationName"></span>
             </div>
         </div>
         <div class="row">
@@ -47,7 +48,7 @@
                 Country: 
             </div>
             <div class="col2">
-                <select style="width: 92.5%;height: 26px;" name="optCountry" id="optCountry">
+                <select style="width: 63%;height: 26px;" name="optCountry" id="optCountry">
                     <option value="optCountry" disabled selected hidden>(Please select your country)</option>
                     <option value="optCountry">VietNam</option>
                     <option value="optCountry">Korean</option>
@@ -71,7 +72,7 @@
                 Email: 
             </div>
             <div class="col2">
-                <input type="email" class="col-input--l" name="txtEmail" id="txtEmail">
+                <input type="email" class="col-input--l" name="txtEmail" id="txtEmail"><span id="txtNotificationEmail"></span>
             </div>
         </div>
         <div class="row">
@@ -88,8 +89,8 @@
                 Language: 
             </div>
             <div class="col2">
-                <input type="checkbox" name="boxLanguage" id="boxLanguage">English
-                <input type="checkbox" name="boxLanguage" id="boxLanguage">Non English
+                <input type="checkbox" name="boxLanguage" id="boxLanguage" onclick="onlyOne(this)">English
+                <input type="checkbox" name="boxLanguage" id="boxLanguage" onclick="onlyOne(this)">Non English
             </div>
         </div>
         <div class="row">
@@ -101,11 +102,12 @@
             </div>
         </div>
         <div class="row1">
-            <input class="btnSubmit" type="submit" value="Submit">
+            <input class="btnSubmit" type="submit" value="Submit" id="btnSubmit">
         </div>
     </div>
     
-    
-    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/jQuery.js"></script>
+    <!-- <script src="js/main.js"></script> -->
 </body>
 </html>
